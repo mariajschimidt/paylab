@@ -2,13 +2,19 @@
 
 # PayLab - Dashboard Financeiro
 
+## 🌐 Deploy na vercel
+Você pode testar este projeto rodando ao vivo aqui:
+## **[PayLab](https://paylab.vercel.app/).**
+
+---
+
 **Descrição:**
 O **PayLab** é uma plataforma web intuitiva e responsiva projetada para simplificar cálculos financeiros e trabalhistas essenciais. Com uma interface moderna baseada na estética *Glassmorphism* (efeito de vidro), o projeto oferece ferramentas precisas para o cálculo de horas extras, projeções de aumento salarial e estimativas de rendimento anual. O objetivo é eliminar a complexidade de cálculos manuais, proporcionando clareza e precisão para o usuário final.
 
 ## Índice
 - [Funcionalidades](#funcionalidades)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Autores](#autores)
+- [Autor](#autor)
 - [Licença](#licença)
 
 ## Funcionalidades
@@ -31,7 +37,7 @@ O projeto foi construído utilizando tecnologias modernas para garantir uma inte
 | **Lucide Icons** | ![Lucide](https://img.shields.io/badge/Lucide_Icons-7F52FF?style=for-the-badge&logo=lucide&logoColor=white) | Biblioteca de ícones vetoriais utilizada para tornar a interface mais intuitiva e moderna. |
 | **Google Fonts** | ![Google Fonts](https://img.shields.io/badge/Google%20Fonts-4285F4?style=for-the-badge&logo=googleFonts&logoColor=white) | Implementação da fonte **Inter**, garantindo uma leitura limpa e profissional dos dados financeiros. |
 
-## Autores
-Mencione o nome dos alunos responsáveis pelo desenvolvimento do projeto e seus respectivos contatos.
+## Autor
+Maria Júllia Schimidt Ott Prestes
 
 - **Maria Júllia** - [GitHub](https://github.com/mariajschimidt) - maria.prestes.senai@gmail.com
