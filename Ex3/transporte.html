@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayLab | Custos de Transporte</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+     <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+  body { font-family: 'Inter', sans-serif; }
+  
+  .glass { 
+    background: rgba(255, 255, 255, 0.03); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+</style>
+</head>
+<body class="bg-[#0f172a] text-slate-200 min-h-screen flex flex-col items-center justify-center p-4">
+  
+  <main class="glass w-full max-w-lg p-8 rounded-3xl shadow-2xl">
+    <header class="flex items-center gap-4 mb-8">
+      <a href="../index.html" class="p-2 hover:bg-white/10 rounded-lg transition-colors"><i data-lucide="arrow-left"></i></a>
+      <h1 class="text-2xl font-bold text-white">Salário Anual</h1>
+    </header>
+
+    <form id="formTransporte" class="space-y-6">
+      <div>
+        <label class="block text-sm font-medium text-slate-400 mb-2">Quantidade de Pessoas</label>
+        <input type="number" id="quantidadePessoas" class="w-full bg-slate-800/50 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-amber-500 transition-colors" placeholder="Ex: 1">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-slate-400 mb-2">Quantidade de Dias</label>
+        <input type="number" id="quantidadeDias" class="w-full bg-slate-800/50 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-amber-500 transition-colors" placeholder="Ex: 22">
+      </div>
+      <button type="button" onclick="calcularTransporte()" class="w-full bg-amber-600 hover:bg-amber-500 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-amber-500/20">
+        Calcular Total
+      </button>
+    </form>
+
+    <div class="mt-8 pt-8 border-t border-white/5">
+      <label class="block text-xs uppercase tracking-widest text-slate-500 font-bold mb-3">Resultado do Cálculo</label>
+      <div id="resultado" class="text-3xl font-bold text-amber-400">---</div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

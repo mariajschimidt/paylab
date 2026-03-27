@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayLab | Aumento Salarial</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+  body { font-family: 'Inter', sans-serif; }
+  
+  .glass { 
+    background: rgba(255, 255, 255, 0.03); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+  }
+
+  /* REMOVE AS SETINHAS (SPINNERS) DOS INPUTS */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+</style>
+</head>
+<body class="bg-[#0f172a] text-slate-200 min-h-screen flex flex-col items-center justify-center p-4">
+  <div class="fixed inset-0 overflow-hidden -z-10">
+    <div class="absolute -bottom-[10%] -right-[10%] w-[40%] h-[40%] rounded-full bg-emerald-500/10 blur-[120px]"></div>
+  </div>
+
+  <main class="glass w-full max-w-lg p-8 rounded-3xl shadow-2xl">
+    <header class="flex items-center gap-4 mb-8">
+      <a href="../index.html" class="p-2 hover:bg-white/10 rounded-lg transition-colors"><i data-lucide="arrow-left"></i></a>
+      <h1 class="text-2xl font-bold text-white">Hora Trabalhada</h1>
+    </header>
+
+    <form id="formAumento" class="space-y-6">
+      <div>
+        <label class="block text-sm font-medium text-slate-400 mb-2">Salário Atual (R$)</label>
+        <input type="number" id="salarioAtual" class="w-full bg-slate-800/50 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-emerald-500 transition-colors" placeholder="Ex: 3000">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-slate-400 mb-2">Percentual de Aumento (%)</label>
+        <input type="number" id="percentualAumento" class="w-full bg-slate-800/50 border border-slate-700 rounded-xl px-4 py-3 focus:outline-none focus:border-emerald-500 transition-colors" placeholder="Ex: 10">
+      </div>
+      <button type="button" onclick="calcularAumento()" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 rounded-xl transition-all shadow-lg shadow-emerald-500/20">
+        Calcular Novo Salário
+      </button>
+    </form>
+
+    <div class="mt-8 pt-8 border-t border-white/5">
+      <label class="block text-xs uppercase tracking-widest text-slate-500 font-bold mb-3">Novo Salário</label>
+      <input type="text" id="resultadoAumento" class="w-full bg-transparent text-3xl font-bold text-emerald-400 focus:outline-none" placeholder="R$ 0,00" readonly>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
