@@ -3,8 +3,7 @@
 # PayLab - Dashboard Financeiro
 
 ## 🌐 Deploy na vercel
-Você pode testar este projeto rodando ao vivo aqui:
-## **[PayLab](https://paylab.vercel.app/).**
+Você pode testar este projeto rodando ao vivo aqui: **[PayLab](https://paylab.vercel.app/).**
 
 ---
 
