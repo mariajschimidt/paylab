@@ -5,7 +5,7 @@
 ## 🌐 Deploy na vercel
 Você pode testar este projeto rodando ao vivo aqui: **[PayLab](https://paylab.vercel.app/).**
 
----
+----
 
 **Descrição:**
 O **PayLab** é uma plataforma web intuitiva e responsiva projetada para simplificar cálculos financeiros e trabalhistas essenciais. Com uma interface moderna baseada na estética *Glassmorphism* (efeito de vidro), o projeto oferece ferramentas precisas para o cálculo de horas extras, projeções de aumento salarial e estimativas de rendimento anual. O objetivo é eliminar a complexidade de cálculos manuais, proporcionando clareza e precisão para o usuário final.
